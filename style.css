@@ -1844,3 +1844,166 @@ footer p {
         font-size: 16px;
     }
 }
+/* =========================================
+   PROFESSIONAL ABOUT SECTION
+   ========================================= */
+
+#about {
+    background: #fff8ed;
+}
+
+#about h2 {
+    margin-bottom: 15px;
+}
+
+.about-container {
+    max-width: 1050px;
+    margin: 35px auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.about-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+
+    text-align: left;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.18);
+}
+
+.about-card h3 {
+    color: #8b0000;
+    text-align: center;
+
+    font-size: 25px;
+
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+.about-card p {
+    font-size: 16px;
+    line-height: 1.8;
+
+    margin-bottom: 18px;
+
+    color: #444;
+}
+
+/* History highlight */
+.history-highlight {
+    max-width: 550px;
+
+    margin: 40px auto 10px;
+
+    padding: 25px 30px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.14);
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 25px;
+
+    transition: transform 0.3s ease;
+}
+
+.history-highlight:hover {
+    transform: translateY(-4px);
+}
+
+.history-number {
+    font-size: 60px;
+
+    font-weight: bold;
+
+    color: #8b0000;
+
+    line-height: 1;
+}
+
+.history-text {
+    font-size: 22px;
+
+    color: #8b0000;
+
+    font-weight: 600;
+}
+
+.history-text small {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 15px;
+
+    color: #555;
+
+    font-weight: normal;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .about-container {
+        grid-template-columns: 1fr;
+        max-width: 700px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .about-container {
+        width: 100%;
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .about-card {
+        padding: 22px;
+    }
+
+    .about-card h3 {
+        font-size: 22px;
+    }
+
+    .about-card p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .history-highlight {
+        margin: 30px 5px 10px;
+        padding: 22px 15px;
+        gap: 15px;
+    }
+
+    .history-number {
+        font-size: 48px;
+    }
+
+    .history-text {
+        font-size: 18px;
+    }
+
+    .history-text small {
+        font-size: 13px;
+    }
+}
