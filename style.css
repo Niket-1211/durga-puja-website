@@ -2007,3 +2007,229 @@ footer p {
         font-size: 13px;
     }
 }
+/* =========================================
+   PROFESSIONAL FACILITIES SECTION
+   ========================================= */
+
+#facilities {
+    background: #fff8ed;
+}
+
+#facilities h2 {
+    margin-bottom: 20px;
+}
+
+/* Facility cards */
+.facilities-container {
+    max-width: 1050px;
+    margin: 35px auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.facility-card {
+    background: white;
+    padding: 28px 22px;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.facility-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.18);
+}
+
+.facility-card h3 {
+    color: #8b0000;
+
+    font-size: 22px;
+
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.facility-card p {
+    font-size: 16px;
+
+    line-height: 1.7;
+
+    color: #555;
+
+    margin: 0;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+
+    .facilities-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .facilities-container {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .facility-card {
+        padding: 24px 18px;
+    }
+
+    .facility-card h3 {
+        font-size: 20px;
+    }
+
+    .facility-card p {
+        font-size: 15px;
+    }
+}
+/* =========================================
+   PROFESSIONAL FEEDBACK SECTION
+   ========================================= */
+
+#feedback {
+    background: #fff8ed;
+}
+
+.feedback-container {
+    width: 90%;
+    max-width: 650px;
+
+    margin: 35px auto;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 16px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.12);
+
+    box-sizing: border-box;
+}
+
+#feedbackForm {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#feedbackForm label {
+    margin-top: 16px;
+    margin-bottom: 7px;
+
+    font-weight: bold;
+
+    color: #8b0000;
+}
+
+#feedbackForm input,
+#feedbackForm select,
+#feedbackForm textarea {
+    width: 100%;
+
+    padding: 13px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    box-sizing: border-box;
+
+    font-family: Arial, sans-serif;
+
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#feedbackForm input:focus,
+#feedbackForm select:focus,
+#feedbackForm textarea:focus {
+    outline: none;
+
+    border-color: #8b0000;
+
+    box-shadow: 0 0 0 3px rgba(139, 0, 0, 0.1);
+}
+
+#feedbackForm textarea {
+    min-height: 130px;
+
+    resize: vertical;
+}
+
+#feedbackForm button {
+    margin-top: 25px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #8b0000;
+
+    color: white;
+
+    font-size: 17px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#feedbackForm button:hover {
+    background: #a00000;
+
+    transform: translateY(-2px);
+}
+
+.feedback-success {
+    display: none;
+
+    margin: 20px auto;
+
+    padding: 15px 20px;
+
+    max-width: 500px;
+
+    border-radius: 10px;
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    font-weight: bold;
+
+    text-align: center;
+}
+
+/* Mobile feedback */
+@media (max-width: 600px) {
+
+    .feedback-container {
+        width: 100%;
+        padding: 22px 18px;
+    }
+
+    #feedbackForm input,
+    #feedbackForm select,
+    #feedbackForm textarea {
+        font-size: 15px;
+    }
+}
