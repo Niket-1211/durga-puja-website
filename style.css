@@ -1232,3 +1232,192 @@ footer p {
     }
 
 }
+/* =========================================
+   FESTIVE HOME PAGE DESIGN
+   ========================================= */
+
+#home {
+    position: relative;
+    min-height: 680px;
+    padding: 70px 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+/* Decorative festive background */
+#home::before,
+#home::after {
+    content: "🪔";
+    position: absolute;
+    font-size: 55px;
+    opacity: 0.15;
+    pointer-events: none;
+}
+
+#home::before {
+    top: 60px;
+    left: 5%;
+}
+
+#home::after {
+    bottom: 60px;
+    right: 5%;
+}
+
+/* Home content */
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+}
+
+/* Welcome text */
+.home-welcome {
+    font-size: 25px;
+    font-weight: 600;
+    color: #8b0000;
+    margin-bottom: 12px;
+}
+
+/* Main heading */
+.home-content h1 {
+    font-size: 50px;
+    color: #8b0000;
+    margin: 15px auto;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/* Subtitle */
+.home-content h2 {
+    font-size: 25px;
+    color: #555;
+    font-weight: 500;
+    margin: 15px auto 25px;
+    line-height: 1.5;
+}
+
+/* Description */
+.home-description {
+    max-width: 750px;
+    margin: 0 auto 35px;
+    font-size: 18px;
+    line-height: 1.8;
+    color: #444;
+}
+
+/* Home logo */
+.home-logo {
+    width: 280px;
+    height: 280px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 25px;
+    transition: transform 0.4s ease;
+}
+
+.home-logo:hover {
+    transform: scale(1.04);
+}
+
+/* Home buttons */
+.home-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 15px 26px;
+    background: #8b0000;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.home-button:hover {
+    transform: translateY(-4px);
+    background: #a00000;
+    box-shadow: 0 7px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Home */
+@media (max-width: 768px) {
+
+    #home {
+        min-height: auto;
+        padding: 55px 15px;
+    }
+
+    .home-welcome {
+        font-size: 20px;
+    }
+
+    .home-content h1 {
+        font-size: 34px;
+    }
+
+    .home-content h2 {
+        font-size: 19px;
+    }
+
+    .home-description {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+
+    .home-logo {
+        width: 190px;
+        height: 190px;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+    }
+
+    .home-button {
+        width: 85%;
+        max-width: 300px;
+        text-align: center;
+        box-sizing: border-box;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    #home {
+        padding: 40px 12px;
+    }
+
+    .home-welcome {
+        font-size: 18px;
+    }
+
+    .home-content h1 {
+        font-size: 29px;
+    }
+
+    .home-content h2 {
+        font-size: 17px;
+    }
+
+    .home-logo {
+        width: 155px;
+        height: 155px;
+    }
+
+    .home-description {
+        font-size: 15px;
+    }
+}
